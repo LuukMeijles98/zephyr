@@ -1,0 +1,13 @@
+# Atmel SAML MCU series
+
+# Copyright (c) 2021 Argentum Systems Ltd.
+# SPDX-License-Identifier: Apache-2.0
+
+choice
+	prompt "Atmel SAMR30 MCU Selection"
+	depends on SOC_SERIES_SAMR30
+
+config SOC_PART_NUMBER_SAMR30M18A
+	bool "SAMR30M18A"
+
+endchoice
