@@ -1,0 +1,15 @@
+/*
+ * Copyright (c) 2021 Argentum Systems Ltd.
+ *
+ * SPDX-License-Identifier: Apache-2.0
+ */
+
+#include <atmel/saml21.dtsi>
+
+//only for atsamr30e18
+#ifdef CONFIG_SOC_PART_NUMBER_SAMR30E18A
+/delete-node/ &tcc4;
+/delete-node/ &sercom5;
+#endif
+
+/delete-node/ &dac;
