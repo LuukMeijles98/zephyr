@@ -9,7 +9,8 @@ config SOC_SERIES
 	default "samr30"
 
 config SOC_PART_NUMBER
-	default "samr30m18a" if SOC_PART_NUMBER_SAMR30M18A
+	default "samr30e18a" if SOC_PART_NUMBER_SAMR30E18A
+	default "samr30g18a" if SOC_PART_NUMBER_SAMR30G18A
 
 config NUM_IRQS
 	default 29

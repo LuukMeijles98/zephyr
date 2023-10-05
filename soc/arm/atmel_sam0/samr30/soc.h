@@ -3,15 +3,17 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-#ifndef _ATMEL_SAML_SOC_H_
-#define _ATMEL_SAML_SOC_H_
+#ifndef _ATMEL_SAMR_SOC_H_
+#define _ATMEL_SAMR_SOC_H_
 
 #ifndef _ASMLANGUAGE
 
 #define DONT_USE_CMSIS_INIT
 
-#if defined(CONFIG_SOC_PART_NUMBER_SAMR30M18A)
-#include <samr30m18a.h>
+#if defined(CONFIG_SOC_PART_NUMBER_SAMR30E18A)
+#include <samr30e18a.h>
+#elif defined(CONFIG_SOC_PART_NUMBER_SAMR30G18A)
+#include <samr30g18a.h>
 #else
 #error Library does not support the specified device.
 #endif
