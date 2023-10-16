@@ -14,10 +14,10 @@
 		};
 	};
 
-	sercom0_default: sercom0_default {
+	sercom2_default: sercom2_default {
 		group1 {
-			pinmux = <PA6D_SERCOM0_PAD2>,
-				 <PA7D_SERCOM0_PAD3>;
+			pinmux = <PA14C_SERCOM2_PAD2>,
+				 <PA15C_SERCOM2_PAD3>;
 		};
 	};
 };

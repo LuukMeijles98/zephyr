@@ -14,6 +14,8 @@
 	compatible = "luuk,zigbeeDimmer", "atmel,samr30e18", "atmel,samr30";
 
 	chosen {
+		zephyr,console = &sercom2;
+		zephyr,shell-uart = &sercom2;
 		zephyr,sram = &sram0;
 		zephyr,flash = &flash0;
 	};
@@ -34,4 +36,15 @@
 
 &cpu0 {
 	clock-frequency = <48000000>;
+};
+
+&sercom2 {
+	status = "okay";
+	compatible = "atmel,sam0-uart";
+	current-speed = <115200>;
+	rxpo = <3>;
+	txpo = <2>;
+
+	pinctrl-0 = <&sercom2_default>;
+	pinctrl-names = "default";
 };
