@@ -42,8 +42,8 @@
 	status = "okay";
 	compatible = "atmel,sam0-uart";
 	current-speed = <115200>;
-	rxpo = <3>;
-	txpo = <2>;
+	rxpo = <0>;
+	txpo = <1>;
 
 	pinctrl-0 = <&sercom2_default>;
 	pinctrl-names = "default";
