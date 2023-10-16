@@ -150,7 +150,7 @@ manifest:
       groups:
         - hal
     - name: hal_atmel
-      revision: 5ab43007eda3f380c125f957f03638d2e8d1144d
+      revision: 4ccb234183946db11afcd9c47984693ec200a00a
       path: modules/hal/atmel
       groups:
         - hal
@@ -336,6 +336,9 @@ manifest:
     - name: zcbor
       revision: 67fd8bb88d3136738661fa8bb5f9989103f4599e
       path: modules/lib/zcbor
+    - name: zigbeeDimmer
+      revision: dfae1a4e304b4c03d295db0517d53dbb8f5864de
+      path: zigbeedimmer/
 
   self:
     path: zephyr
